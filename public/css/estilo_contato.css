@@ -8,7 +8,7 @@
 
 /* Corpo */
 body {
-  background-image: url('../imagens/fundo.jpg');
+  background-image: url("/public/imagens/fundo.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   min-height: 100vh;
