@@ -1,0 +1,111 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: rgb(10, 30, 40);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header e Footer */
+header, footer {
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: cyan;
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+header img {
+  height: 50px;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  flex-grow: 1;
+  text-align: center;
+}
+
+footer {
+  text-align: center;
+  margin-top: auto;
+  font-size: 0.9rem;
+}
+.voltar {
+  align-self: flex-end;
+  text-align: right;
+  margin-top: 1rem;
+  color: cyan;
+  text-decoration: none;
+  font-weight: bold;
+  
+}
+
+.voltar:hover {
+  color: #00ffee;
+}
+
+/* Card */
+main {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex: 1;
+}
+
+.card {
+  background-color: rgba(0,32,36,0.96);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 960px;
+  display: flex;
+  margin: 2rem auto;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 0 12px rgba(0,255,255,0.2)
+}
+
+/* Layout em colunas para as seções */
+.card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+section {
+  flex: 1;
+}
+
+@media screen and(min-width:768px){
+.card-content{
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+}
+
+section h2 {
+  color: cyan;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+}
+
+section p,
+section li {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: disc;
+  padding-left: 20px;
+}

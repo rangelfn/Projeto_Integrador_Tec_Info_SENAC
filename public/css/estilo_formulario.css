@@ -1,0 +1,174 @@
+/* RESET E BASE */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-image: url('../imagens/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+/* HEADER */
+header {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 20px;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* MAIN */
+main {
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+
+/* FORMULÁRIO */
+.formulario {
+  background-color: rgba(0, 40, 50, 0.8);
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  width: 100%;
+}
+
+.formulario h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  color: #00ffff;
+}
+
+/* CAMPOS DO FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+input,
+textarea {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f0f0f0;
+  color: black;
+}
+
+textarea {
+  resize: vertical;
+}
+
+/* BOTÃO */
+button {
+  align-self: center;
+  padding: 10px 25px;
+  background-color: #00ffff;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: cyan;
+  box-shadow: 0 0 10px #00ffff;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ffff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: auto;
+}
+
+/* RESPONSIVO */
+@media screen and (max-width: 600px) {
+  .formulario {
+    padding: 1.5rem;
+  }
+
+  .logo {
+    width: 40px;
+    height: 40px;
+  }
+}
+.form-voltar {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 10px;
+}
+
+.voltar-pequeno {
+  font-size: 0.9rem;
+  color: #00ffff;
+  text-decoration: none;
+  font-weight: bold;
+  background-color: transparent;
+  border: 1px solid #00ffff;
+  border-radius: 20px;
+  padding: 5px 10px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.voltar-pequeno:hover {
+  background-color: #00ffff;
+  color: black;
+}
+
+.mensagem-status {
+  margin-top: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mensagem-status.sucesso {
+  background-color: #d4f7d4;
+  color: #006400;
+}
+
+.mensagem-status.erro {
+  background-color: #ffdada;
+  color: #8b0000;
+}

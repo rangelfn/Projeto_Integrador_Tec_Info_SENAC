@@ -1,0 +1,108 @@
+/* Reset básico */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo do corpo */
+  body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: #333;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Container principal */
+  main {
+    background: #fff;
+    padding: 35px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 420px;
+    transition: all 0.3s ease;
+  }
+  
+  /* Artigo */
+  article {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+  
+  /* Título */
+  h1 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    font-weight: 600;
+  }
+  
+  /* Label */
+  label {
+    font-size: 1rem;
+    color: #34495e;
+    margin-bottom: -10px;
+  }
+  
+  /* Campo de entrada */
+  input {
+    padding: 12px 15px;
+    font-size: 1rem;
+    border: 2px solid #3498db;
+    border-radius: 10px;
+    transition: 0.3s ease;
+    outline: none;
+  }
+  
+  input:focus {
+    border-color: #2980b9;
+    box-shadow: 0 0 5px rgba(41, 128, 185, 0.4);
+  }
+  
+  /* Botão */
+  button {
+    padding: 14px;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 8px 15px rgba(106, 17, 203, 0.3);
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 12px 20px rgba(106, 17, 203, 0.4);
+  }
+  
+  /* Resultado */
+  #resultado {
+    background-color: #ecf0f1;
+    border-left: 5px solid #2980b9;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.05rem;
+    color: #2c3e50;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Animação para o resultado */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(5px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

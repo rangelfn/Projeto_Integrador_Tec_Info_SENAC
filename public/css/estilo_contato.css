@@ -1,0 +1,126 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+/* Corpo */
+body {
+  background-image: url('../imagens/fundo.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* HEADER */
+header {
+  width: 100%;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+  padding: 2rem;
+  width: 100%;
+  max-width: 800px;
+  text-align: center;
+}
+
+.contato h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.info-contato {
+  background-color: rgba(0, 40, 50, 0.85);
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  margin-bottom: 30px;
+}
+
+.info-contato p {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+/* LINK ÂNCORA */
+.link-ancora {
+  margin-bottom: 30px;
+}
+
+.link-ancora a {
+  display: inline-block;
+  padding: 10px 25px;
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  text-decoration: none;
+  color: #00ffff;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+
+.link-ancora a:hover {
+  background-color: #00ffff;
+  color: black;
+  box-shadow: 0 0 10px #00ffff;
+  transform: translateY(-2px);
+}
+
+/* FOOTER */
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #00ffff;
+  text-align: center;
+  padding: 15px 10px;
+  font-size: 0.95rem;
+  letter-spacing: 1px;
+  width: 100%;
+  margin-top: auto;
+}
+
+.link-ancora {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.btn-ancora {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: transparent;
+  color: #00ffff;
+  border: 2px solid #00ffff;
+  border-radius: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn-ancora:hover {
+  background-color: #00ffff;
+  color: black;
+  box-shadow: 0 0 10px #00ffff;
+}
